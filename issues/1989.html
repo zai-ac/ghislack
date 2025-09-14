@@ -1,0 +1,83 @@
+<div class="c-message_attachment__body"><div class="c-message_attachment__row"><span class="c-message_attachment__title"
+data-qa="message_attachment_title"><a target="_blank" class="c-link
+c-link--underline c-message_attachment__title_link"
+data-qa="message_attachment_title_link"
+href="https://github.com/integrations/slack/issues/1989" rel="noopener
+noreferrer"><span dir="auto">#1989 Surface containing blob permalinks
+does not enclose with code blocks</span><span aria-label="(opens in
+new tab)"
+data-qa="opens-in-new-tab"></span></a></span></div><div class="c-message_attachment__row"><span class="c-message_attachment__text"
+data-qa="message_attachment_text"><span dir="auto"><b data-stringify-type="bold">Describe
+the bug</b> &nbsp;<wbr><br>The message triggered by creation of an
+Issue that includes permalinks into code within the same repository
+does not render using a monospace code block in the displayed
+surface.<span class="c-mrkdwn__br"
+data-stringify-type="paragraph-break"></span><b data-stringify-type="bold">To
+Reproduce</b> &nbsp;<wbr><br>Hoping that you're dogfooding, I will
+include one of these failures in the Slack message that should be
+triggered by the creation of this Issue... if so, scroll to the end of
+this message's surface.<span class="c-mrkdwn__br"
+data-stringify-type="paragraph-break"></span>If not, here are the
+steps to reproduce the behavior:<span class="c-mrkdwn__br"
+data-stringify-type="paragraph-break"></span>1. If you're not
+dogfooding, create a new issue in a repository that has slack
+notifications from the github integration enabled;<br>2. From the code
+browser of that repository, select some lines of code using the line
+numbers, and copy the permalink using the dropdown menu from the
+ellipsis that appears by the selection;<br>3. Submit the
+issue;<br>4. Open the Unreads view from <a target="_blank"
+class="c-link c-link--underline"
+data-stringify-link="http://app.slack.com" data-sk="tooltip_parent"
+href="http://app.slack.com" rel="noopener
+noreferrer">app.slack.com</a> and locate the offending message from
+the GitHub App.<span class="c-mrkdwn__br"
+data-stringify-type="paragraph-break"></span><b data-stringify-type="bold">Expected
+behavior</b> &nbsp;<wbr><br>The lines of code quoted in the permalink
+should be enclosed in a <a target="_blank" class="c-link
+c-link--underline"
+data-stringify-link="https://api.slack.com/reference/surfaces/formatting#inline-code"
+data-sk="tooltip_parent"
+href="https://api.slack.com/reference/surfaces/formatting#inline-code"
+rel="noopener noreferrer">multi-line code
+block</a>.<span class="c-mrkdwn__br"
+data-stringify-type="paragraph-break"></span><b data-stringify-type="bold">Screenshots</b>
+&nbsp;<wbr><br>My workstation does not currently allow
+screenshots.<span class="c-mrkdwn__br"
+data-stringify-type="paragraph-break"></span><b data-stringify-type="bold">Desktop
+(please complete the following
+information):</b><span class="c-mrkdwn__br"
+data-stringify-type="paragraph-break"></span>• OS: "btw I'm using Arch
+linux"<br>• Browser: Chromium<br>• Version: &gt;=
+131<span class="c-mrkdwn__br"
+data-stringify-type="paragraph-break"></span><b data-stringify-type="bold">Additional
+context</b> &nbsp;<wbr><br>I first encountered this in a private Slack
+group, and I'm not currently in your organisation where this issue
+might demonstrate the bug, so please tell me if you neither see it
+below nor can reproduce it from my instructions
+above.<span class="c-mrkdwn__br"
+data-stringify-type="paragraph-break"></span><a target="_blank"
+class="c-link c-link--underline"
+data-stringify-link="https://github.com/integrations/slack/blob/43774c20526a429079b0dee05d512f0c2d2db770/.github/settings.yml#L4-L8"
+data-sk="tooltip_parent"
+href="https://github.com/integrations/slack/blob/43774c20526a429079b0dee05d512f0c2d2db770/.github/settings.yml#L4-L8"
+rel="noopener
+noreferrer">slack/.github/settings.yml</a> <span class="c-mrkdwn__br"
+data-stringify-type="paragraph-break"></span> Lines 4 to 8
+in<a target="_blank" class="c-link c-link--underline"
+data-stringify-link="/integrations/slack/commit/43774c20526a429079b0dee05d512f0c2d2db770"
+data-sk="tooltip_parent"
+href="https://zai-ac.slack.com/integrations/slack/commit/43774c20526a429079b0dee05d512f0c2d2db770"
+rel="noopener noreferrer">43774c2</a> <span class="c-mrkdwn__br"
+data-stringify-type="paragraph-break"></span>| # The name of the
+repository. Changing this will rename the repository &nbsp;<wbr>
+| <span class="c-message_attachment__footer_ts
+c-message_attachment__part" data-qa="attachment-footer-timestamp">Dec
+12th, 2024</span>
+| <span class="c-message_attachment__footer_attribution
+c-message_attachment__part" data-qa-attachment-attribution="true"
+data-qa="message_attachment_footer_attribution">Added
+by <a target="_blank" title="GitHub" class="c-link"
+data-attribution-bot-id="B070VVDQ1MJ"
+href="https://zai-ac.slack.com/services/B070VVDQ1MJ" rel="noopener
+noreferrer">GitHub<span aria-label="(opens in new tab)"
+data-qa="opens-in-new-tab"></span></a></span></span></div></div>
